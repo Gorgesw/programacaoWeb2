@@ -1,0 +1,189 @@
+ #nav {
+     margin-left: 1.75rem;
+     margin-bottom: 1.7rem;
+ }
+
+ #aviso {
+     color: rgb(255, 0, 0);
+     display: none;
+     font-weight: var(--fw-base);
+     font-family: var(--ff-inter);
+     font-size: .80rem;
+     margin-left: .5rem;
+     margin-left: 1.75rem;
+ }
+
+ .voltar {
+     font-size: 0.875rem;
+     margin-top: 1.5rem;
+     color: var(--color-brand);
+     font-family: var(--ff-inter);
+     font-weight: var(--fw-md);
+ }
+
+ p {
+     margin-top: .5rem;
+     font-family: var(--ff-inter);
+     font-weight: var(--fw-md);
+ }
+
+
+ h1 {
+     font-family: var(--ff-inter);
+     font-weight: bold;
+     margin-top: 1rem;
+     font-size: var(--fs-lg);
+ }
+
+ input {     
+     width: 20rem;
+     height: 2.7rem; 
+     border-radius: 0.85rem;
+     border: solid 2px;
+     border-color: var(--border-primary);
+     letter-spacing: 0.5px;
+     padding: 0.5rem;
+     font-size: var(--fs-sm);
+
+ }
+
+ input::placeholder {
+     color: #9CA3AF;
+     font-family: var(--ff-inter);
+     font-weight: 250;
+ }
+
+ .button {
+     
+     background-color: var(--color-brand);
+     margin-top: 1rem;
+     border-radius: 0.5rem;
+     padding: 0.6rem 6.6rem;
+     white-space: nowrap;
+     margin-bottom: .5rem;
+     border: none;
+     color: white;
+     font-weight: var(--fw-md);
+     font-family: var(--ff-inter);
+
+ }
+
+ #listaItens li {
+     display: flex;
+     justify-content: space-between;
+     margin: auto;
+     margin-top: .75rem;
+     width: 20rem;
+     height: 3.4rem;
+     border-radius: 0.85rem;
+     align-items: center;
+     background-color: var(--always-white);
+     letter-spacing: 0.5px;
+     padding: 0.75rem;
+     font-size: var(--fs-sm);
+     color: #000000;
+     font-family: var(--ff-inter);
+     font-weight: 500;
+     text-align: end
+ }
+
+ .item-esquerda {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+
+ }
+
+
+
+ .item-esquerda input[type="checkbox"] {
+
+     display: flex;
+     align-items: center;
+     width: 14px;
+     height: 14px;
+     margin: 0;
+     padding: 0;
+ }
+
+ .lixeira {
+     background: none;
+     border: none;
+     font-size: 1.2rem;
+     cursor: pointer;
+ }
+
+ #mensagem-remocao {
+
+     display: none;
+     margin: auto;
+     align-items: center;
+     background: #dc3545;
+     color: white;
+     padding: 0.75rem;
+     width: 20rem;
+     height: 2.75rem;
+     border-radius: 12px;
+     margin-top: 1.5rem;
+     text-align: center;
+     font-family: var(--ff-inter);
+ }
+
+ #mensagem-remocao img {
+
+     margin-right: 4px;
+
+ }
+ .acao {
+    display: flex;
+    flex-direction: column;
+    gap: rem;
+    margin-top: 2.7rem;
+  }
+  
+
+@media (width >=80rem) {
+    #nav {
+        display: block;
+        margin-left: 21.5rem;
+    }
+
+    .acao {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 21.5rem;
+        gap: 1rem; 
+    }
+
+    .acao input {
+        width: 30rem;
+        margin: 0;
+    }
+
+    .acao .button {
+        padding: 0.6rem 2rem;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    #aviso {
+        margin-left: 21.5rem;
+    }
+
+    #listaItens li {
+        width: 41.75rem; 
+        height: 3rem;  
+        margin-left: 20rem;
+    }
+
+    #mensagem-remocao {
+        width: 41.75rem;
+    }
+}
+  
+
+
+
+
+

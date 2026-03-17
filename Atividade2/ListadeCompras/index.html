@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Giga&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="container">
+        <img src="assets/logo.png" alt="">
+    </header>
+
+
+    <section class="container py-lg">
+        <div id="nav">
+            <p class="voltar">Voltar</p>
+            <h1>Compras da semana</h1>
+        </div>
+
+        <div class="container acao">
+            <input id="novoItem" type="text" placeholder="Adicione um novo item">
+            <button id="AdicionarBtn" class="button">Adicionar item </button>
+        </div>
+
+        <div>
+            <p id="aviso">Por favor, insira um item válido.</p>
+        </div>
+
+        <ul id="listaItens" class="container">
+
+        </ul>
+
+        <div id="mensagem-remocao" class="mensagem escondido">
+            <img src="assets/warning-circle-filled.png" alt=""> O item foi removido da lista
+        </div>
+
+    </section>
+</body>
+<script src="script.js"> </script>
+
+</html>
